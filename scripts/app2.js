@@ -1,5 +1,5 @@
 // the variables and functions scope are not longer global
-function init() {
+(function(){
     var content = document.querySelector("#reporter"),
         listeners = [],
         listenersEnabled = false,
@@ -61,6 +61,6 @@ function init() {
 
         // sets up listeners
         toggleEventListeners();
-}
+})();
 
-window.addEventListener('load', init);
+// window.addEventListener('load', init);
